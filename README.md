@@ -2,6 +2,8 @@
 
 “Games within games. Logic within light.”
 
+Live APP link https://latticezero.vercel.app/
+
 Project Lattice Zero is a clean, fast, browser-based AI companion that helps you clarify goals, analyze trade-offs, and generate practical next steps — powered by your own Gemini API key. No complicated setup. No backend servers. Just open-web tech you control.
 
 ✨ What it does (for everyday users)

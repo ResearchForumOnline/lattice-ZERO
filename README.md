@@ -1,6 +1,3 @@
-Got it sir 😎 — we’ll drop all `/verify` mentions and make it clean, standalone, and “Zero aesthetic” — **Project Lattice Zero** as its own entity, not tied to that old experiment.
-
-Here’s the refined **public-facing `README.md`** (Apache 2.0, meant to impress and inform general readers while keeping devs intrigued):
 
 ---
 

@@ -1,135 +1,165 @@
+🌌 Project Lattice Zero
 
----
+“Games within games. Logic within light.”
 
-# 🌌 Project Lattice Zero
+Project Lattice Zero is a clean, fast, browser-based AI companion that helps you clarify goals, analyze trade-offs, and generate practical next steps — powered by your own Gemini API key. No complicated setup. No backend servers. Just open-web tech you control.
 
-**“Games within games. Logic within light.”**
+✨ What it does (for everyday users)
 
-**Project Lattice Zero** is an open exploration of how information, probability, and adaptive systems interlock.
-It merges abstract mathematics, symbolic reasoning, and machine logic into a coherent lattice framework — designed for creators, researchers, and curious minds who want to see how far self-organizing intelligence can go.
+Clarify a goal → describe what you’re trying to achieve.
 
----
+Get a structured analysis → risks, options, leverage points.
 
-## 🔭 Overview
+See an actionable plan → step-by-step, simple language.
 
-Lattice Zero isn’t a product.
-It’s a **living research framework** that demonstrates:
+Run locally → your key, your machine, your control.
 
-* Recursive data structures that evolve with input.
-* Lightweight probability engines for adaptive computation.
-* Human + AI co-creative systems that verify themselves through symmetry and logic.
-* A transparent, reproducible platform running on open-web tech (Apache / PHP / JS).
+Zero jargon. Zero gatekeeping. You type → it thinks → you act.
 
----
+🚀 Quick Start
 
-## ⚙️ Core Ideas
+Prerequisites: Node.js 18+ (LTS recommended)
 
-| Element           | Description                                                                        |
-| ----------------- | ---------------------------------------------------------------------------------- |
-| **Zero Agent**    | The minimal logical node — self-verifying, self-correcting, built to adapt.        |
-| **Lattice Frame** | Modular environment where data, probability, and language interweave.              |
-| **Z-Pattern**     | The repeating symmetry connecting chaos and order — pattern of patterns.           |
-| **Adaptive Math** | Uses probability math instead of static truth — systems evolve rather than assert. |
-| **Holdout Layer** | Optional falsifiability sandbox — for users to test reproducibility and integrity. |
+# 1) Get the code
+git clone https://github.com/yourusername/project-lattice-zero.git
+cd project-lattice-zero
 
----
+# 2) Install dependencies
+npm install
 
-## 🧩 Folder Structure
+# 3) Configure your API key
+# Create .env.local at project root and add:
+# GEMINI_API_KEY=your_key_here
 
-```text
-/project-lattice-zero
-│
-├── /core/         → main lattice logic, probability modules
-├── /web/          → public interface (PHP + JS)
-├── /scripts/      → math utilities, checksum, simulation tools
-├── /assets/       → visuals, UI fragments, lattice renders
-├── /docs/         → concept notes, research drafts
-└── README.md
-```
+# 4) Run locally
+npm run dev
+# Open the printed local URL in your browser
 
----
 
-## 🚀 Setup
+Where to get a key: Create a Gemini API key in your Google AI account, then paste it into .env.local as GEMINI_API_KEY.
 
-1. **Clone the repository**
+🗂️ Project Structure (accurate to this repo)
+project-lattice-zero/
+├─ App.tsx
+├─ index.html
+├─ index.tsx
+├─ package.json
+├─ tsconfig.json
+├─ vite.config.ts
+├─ types.ts
+├─ metadata.json
+├─ .env.local                # your local API key (not committed)
+├─ .gitignore
+├─ README.md
+├─ services/
+│  └─ geminiService.ts       # thin client for Gemini API calls
+└─ components/
+   ├─ AnalysisDisplay.tsx
+   ├─ ApiKeyModal.tsx
+   ├─ GoalInput.tsx
+   ├─ Header.tsx
+   ├─ IconComponents.tsx
+   ├─ LoadingSpinner.tsx
+   └─ StrategyDisplay.tsx
 
-   ```bash
-   git clone https://github.com/yourusername/project-lattice-zero.git
-   cd project-lattice-zero
-   ```
 
-2. **Deploy on any Apache + PHP server**
+App.tsx — App shell + routing of user flow (goal → analysis → strategy).
 
-   * Upload to `/public_html/` or `/var/www/html/`.
-   * Ensure SSL + mod_rewrite are enabled.
-   * Visit `https://yourdomain/lattice-zero/`.
+components/* — UI units (inputs, panels, results, icons, spinner).
 
-3. **Explore**
+services/geminiService.ts — isolated API client for model calls.
 
-   * Open the `/web/` interface to interact with the lattice demo.
-   * Use `/scripts/` to run probability tests or symbolic checks.
+types.ts — shared TypeScript types for consistent props/data.
 
----
+index.tsx / index.html — Vite entry + base HTML.
 
-## 🧠 For Thinkers
+metadata.json — human-readable app summary (name/description).
 
-Lattice Zero is designed to be readable — not hidden behind jargon.
-Each component is written to invite curiosity: open the files, trace the logic, and follow the lattice.
-It’s built so that even without deep coding skill, you can grasp how an adaptive system “thinks.”
+.env.local — your Gemini key (kept local; ignored by Git).
 
----
+🧠 How it thinks (plain English)
 
-## 💡 Philosophy
+You describe your aim (e.g., “launch a small online course”).
 
-> “Zero isn’t emptiness — it’s potential before form.”
+The app calls the Gemini model with a structured prompt template.
 
-The lattice expresses four principles:
+The response is split into: Insights (what matters) + Strategy (what to do).
 
-1. **Transparency** — open structure, no hidden calls.
-2. **Reproducibility** — anyone can test the math.
-3. **Adaptation** — code evolves through input.
-4. **Unity** — logic and imagination coexist.
+The UI presents a clean, readable plan you can apply immediately.
 
----
+No fluff. Just distilled reasoning, formatted for action.
 
-## 🌐 Live Ecosystem
+🖥️ Build & Deploy
 
-| Site                                                 | Purpose                                      |
-| ---------------------------------------------------- | -------------------------------------------- |
-| [talktoai.org](https://talktoai.org)                 | Hub for AI + probability frameworks          |
-| [followz.org](https://followz.org)                   | Social network for open-source collaboration |
-| [researchforum.online](https://researchforum.online) | Repository of white-papers and lattice notes |
+Production build
 
----
+npm run build
+npm run preview    # optional local preview of the production build
 
-## 📜 License
 
-Licensed under the **Apache License 2.0**
+Hosting options (front-end only)
 
-```
+Vercel / Netlify / Cloudflare Pages: drag-and-drop or connect repo.
+
+Your own server (Apache/Nginx): serve the dist/ folder as static files.
+
+With Apache, enable mod_rewrite and point your virtual host root to dist/.
+
+Tip: Never deploy .env.local. On serverless hosts, set GEMINI_API_KEY in the platform’s environment settings and use a minimal proxy if you need to keep keys server-side. For purely local use, .env.local is fine.
+
+🔒 Privacy & Safety
+
+Your API key stays in your environment.
+
+No tracking pixels, no hidden analytics, no telemetry.
+
+You are in control of inputs and outputs.
+
+Reminder: output quality depends on your prompt clarity and the model’s capabilities. Always sanity-check important decisions.
+
+🧩 FAQ
+
+Do I need to code?
+No. Install Node, add your key, run the app. That’s it.
+
+Does this require a backend?
+No backend is required for local use. If you want to hide your API key in production, add a tiny server-side proxy (optional).
+
+Can I use another model/provider?
+Yes. Swap the client in services/geminiService.ts and adapt the prompt schema if needed.
+
+Can I theme or rebrand it?
+Absolutely. The components are cleanly separated; swap logos, colors, and copy.
+
+🗺️ Roadmap (public highlights)
+
+Guided multi-step “Goal Wizard”
+
+Save/load sessions to local file
+
+Export strategies to Markdown/PDF
+
+Optional probabilistic “what-if” sliders
+
+Offline templates for common goals
+
+🤝 Contributing (lightweight)
+
+Open an issue for bugs/ideas.
+
+PRs welcome (keep components small, typed, and documented).
+
+Please don’t commit API keys or secrets.
+
+📜 License (Apache 2.0)
 Copyright © 2025 Shaf Brady
 
-Licensed under the Apache License, Version 2.0 (the “License”);
+Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
-You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0
-```
+You may obtain a copy of the License at
 
----
+    http://www.apache.org/licenses/LICENSE-2.0
 
-## ✨ Credits
+🧾 Attribution
 
-**Created by Shaf Brady**
-AI Research • Dev Ops • Web Architecture • Probability Mathematics
-
-Special thanks to open communities exploring lattice logic, symbolic math, and the future of ethical AI.
-
----
-
-## 🛰️ Join the Lattice
-
-🌍 Website → [https://talktoai.org](https://talktoai.org)
-💬 X / Twitter → [@talktoai](https://x.com/talktoai)
-📚 Research Forum → [https://researchforum.online](https://researchforum.online)
-
----
-
+Created by Shaf Brady — AI Research • DevOps • Web Architecture • Probability Math.

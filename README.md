@@ -1,5 +1,11 @@
 🌌 Project Lattice Zero
 
+## Featured TalkToAI Ecosystem Video
+
+[![TalkToAI: Sovereignty Through ZeroThink and OpenZero Infrastructure](https://i.ytimg.com/vi/R52hsRdCmSM/hqdefault.jpg)](https://www.youtube.com/watch?v=R52hsRdCmSM)
+
+A public overview of ZeroThink, OpenZero, FreeWebPanel, ZSEC, and the wider TalkToAI infrastructure. Watch it here: https://www.youtube.com/watch?v=R52hsRdCmSM
+
 “Games within games. Logic within light.”
 
 Live APP link https://latticezero.vercel.app/
@@ -165,3 +171,4 @@ You may obtain a copy of the License at
 🧾 Attribution
 
 Created by Shaf Brady — AI Research • DevOps • Web Architecture • Probability Math.
+

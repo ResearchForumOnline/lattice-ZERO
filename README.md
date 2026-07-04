@@ -1,5 +1,28 @@
 🌌 Project Lattice Zero
 
+## Downloads, Releases, And Discovery
+
+| Need | Link |
+| --- | --- |
+| GitHub repository | https://github.com/ResearchForumOnline/lattice-ZERO |
+| Source ZIP | https://github.com/ResearchForumOnline/lattice-ZERO/archive/refs/heads/main.zip |
+| GitHub releases | https://github.com/ResearchForumOnline/lattice-ZERO/releases |
+| TalkToAI ecosystem | https://talktoai.org/ |
+| Docs hub | https://docs.talktoai.org/ |
+
+Browser-based AI companion app for goal clarification, structured analysis, trade-off review, and practical action planning.
+
+Use the live app link from the README or clone the repo for local development.
+
+~~~bash
+git clone https://github.com/ResearchForumOnline/lattice-ZERO.git
+cd lattice-ZERO
+npm install
+npm run dev
+~~~
+
+Search-friendly topics: AI planning app, Gemini API app, browser AI companion, goal analysis tool, local AI planning workflow.
+
 ## Featured TalkToAI Ecosystem Video
 
 [![TalkToAI: Sovereignty Through ZeroThink and OpenZero Infrastructure](https://i.ytimg.com/vi/R52hsRdCmSM/hqdefault.jpg)](https://www.youtube.com/watch?v=R52hsRdCmSM)
